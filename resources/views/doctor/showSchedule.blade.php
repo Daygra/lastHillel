@@ -6,13 +6,18 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header"> Доступное время приема:</div>
+                    <div class="card-header"> Ваше расписание приема:</div>
                     <ul class="list-group list-unstyled">
+
                         @foreach($schedules as $schedule)
 
                             <li >
+{{--                            {{$schedule->doctorSchedules->userName->name}}--}}
+
                                  <form method="post" action="{{ route('deleteSchedule',['id'=>$schedule->id])}}">
                                      {{$schedule->visit}}
+                                     {{ isset($schedule->patient->name) ? 'Записался: '.$schedule->patient->name : 'Не занято' }}
+
                                     @method('delete')
                                     @csrf
                                     <button type="submit" class=" btn btn-link btn-sm float-right">Удалить</button>

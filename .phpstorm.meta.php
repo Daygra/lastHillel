@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2020-06-11 17:35:05.
+    * Generated on 2020-06-21 08:32:08.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -136,6 +136,8 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
+        'dompdf' => \Dompdf\Dompdf::class,
+        'dompdf.wrapper' => \Barryvdh\DomPDF\PDF::class,
         'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -297,6 +299,8 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
+        'dompdf' => \Dompdf\Dompdf::class,
+        'dompdf.wrapper' => \Barryvdh\DomPDF\PDF::class,
         'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -458,6 +462,8 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
+        'dompdf' => \Dompdf\Dompdf::class,
+        'dompdf.wrapper' => \Barryvdh\DomPDF\PDF::class,
         'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -619,6 +625,8 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
+        'dompdf' => \Dompdf\Dompdf::class,
+        'dompdf.wrapper' => \Barryvdh\DomPDF\PDF::class,
         'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -780,6 +788,8 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
+        'dompdf' => \Dompdf\Dompdf::class,
+        'dompdf.wrapper' => \Barryvdh\DomPDF\PDF::class,
         'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -941,6 +951,8 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
+        'dompdf' => \Dompdf\Dompdf::class,
+        'dompdf.wrapper' => \Barryvdh\DomPDF\PDF::class,
         'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -1102,6 +1114,8 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
+        'dompdf' => \Dompdf\Dompdf::class,
+        'dompdf.wrapper' => \Barryvdh\DomPDF\PDF::class,
         'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -1263,6 +1277,8 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
+        'dompdf' => \Dompdf\Dompdf::class,
+        'dompdf.wrapper' => \Barryvdh\DomPDF\PDF::class,
         'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,

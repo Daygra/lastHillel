@@ -10,7 +10,9 @@
                     <ul class="list-group list-unstyled">
                         @foreach($appointments as $appointment)
                             <li>
-                                {{$appointment->visit}} <a href="{{ route('changeSingUpStatus',['id'=>$appointment->id])}}" >Отменить запись к врачу</a>
+                                <a href="{{ route('appointment',['url'=>$appointment->url])}}" >{{$appointment->visit}}</a>
+
+                                <a href="{{ route('changeSingUpStatus',['id'=>$appointment->id])}}" >Отменить запись к врачу</a>
 
                             </li>
                         @endforeach

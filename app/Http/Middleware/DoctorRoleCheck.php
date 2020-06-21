@@ -21,7 +21,7 @@ class DoctorRoleCheck
             return redirect()->route('home');*/
         $user=\Auth::user();
         if(!$this->hasRole($user,'doctor'))
-            return redirect()->route('home');
+            return redirect()->route('/');
 
 
         return $next($request);

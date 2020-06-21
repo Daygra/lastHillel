@@ -11,6 +11,8 @@ use App\Services\DoctorService;
 use App\Services\DoctorServiceInterface;
 use App\Services\PatientService;
 use App\Services\PatientServiceInterface;
+use App\Services\PDFService;
+use App\Services\PDFServiceInterface;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
@@ -28,6 +30,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(DoctorServiceInterface::class,DoctorService::class);
         $this->app->bind(PatientRepositoryInterface::class, PatientRepository::class);
         $this->app->bind(PatientServiceInterface::class,PatientService::class);
+        $this->app->bind(PDFServiceInterface::class,PDFService::class);
     }
 
     /**

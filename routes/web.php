@@ -17,15 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/home', function () {
+    return view('home');
+});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-/*Route::get('ajax',function(){
-    return view('message');
-});
-*/
 Route::middleware('auth')->group(function () {
     Route::get('/our.doctors','Patient\PatientController@showDoctors')->name('our.doctors');
     Route::get('/our.doctor.schedule/{id}','Patient\PatientController@showDoctorsSchedule')->name('doctor.schedule');
@@ -39,4 +37,8 @@ Route::middleware('auth','doctor.check')->group(function () {
     Route::post('/addSchedule', 'Doctor\DoctorController@addSchedule')->name('addSchedule');
 });
 
+
 Route::get('/appointment/{url}', 'ApointmentController@index')->name('appointment');
+
+
+Route::get('/appointment/download/{id}', 'ApointmentController@pdf')->name('pdf');

@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Schedule extends Model
 {
-   /* public function doctorsSchedules(): BelongsTo
+    public function doctorsSchedules(): BelongsTo
     {
-        return $this->belongsTo(User::class);
-    }*/
+        return $this->belongsTo(Doctors::class,'doctor_id','id');
+    }
 
-   /* public function patient(): BelongsTo
+    public function patient(): BelongsTo
     {
         return $this->belongsTo(User::class,'patient_id','id');
-    }*/
+    }
 }

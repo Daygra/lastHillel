@@ -35,12 +35,17 @@ class DoctorRepository implements DoctorRepositoryInterface
 
     public function getAllDoctorsSchedules()
     {
-        return  $this->doctorModel->find(\Auth::id())->doctorsSchedules;
+        return  $this->userModel->find(\Auth::id())->doctors->doctorsSchedules;
     }
 
     public function deleteShedule($id)
     {
-        $this->scheduleModel->find($id)->delete();
+        $this->findSheduleById($id)->delete();
+    }
+
+    public function findSheduleById($id)
+    {
+      return  $this->scheduleModel->find($id);
     }
 
     public function addShedule($data)

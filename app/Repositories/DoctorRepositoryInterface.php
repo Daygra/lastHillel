@@ -16,4 +16,6 @@ interface DoctorRepositoryInterface
 
     public function addShedule($data);
 
+    public function findSheduleById($id);
+
 }
