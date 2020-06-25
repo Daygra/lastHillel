@@ -6,13 +6,13 @@
                 <div class="card">
                     <div class="card-header">Наши врачи:</div>
                     <ul class="list-group list-unstyled">
-                    @foreach($doctors as $doctor)
+                        @foreach($doctors as $doctor)
 
-                        <li>
-                            {{$doctor->doctors_type}} <a href="{{route('doctor.schedule',['id'=>$doctor->id])}}">Выбрать </a>
+                            <li>
+                                {{$doctor->doctors_type}} <a href="{{route('doctor.schedule',['id'=>$doctor->id])}}">Выбрать </a>
 
-                        </li>
-                    @endforeach
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

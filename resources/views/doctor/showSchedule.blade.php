@@ -11,25 +11,25 @@
 
                         @foreach($schedules as $schedule)
 
-                            <li >
-{{--                            {{$schedule->doctorSchedules->userName->name}}--}}
+                            <li>
 
-                                 <form method="post" action="{{ route('deleteSchedule',['id'=>$schedule->id])}}">
-                                     {{$schedule->visit}}
-                                     {{ isset($schedule->patient->name) ? 'Записался: '.$schedule->patient->name : 'Не занято' }}
+                                @if(isset($schedule->url))
+                                    <form method="post" action="{{ route('deleteSchedule',['id'=>$schedule->id])}}">
+                                        <a href="{{ route('appointment',['url'=>$schedule->url])}}">{{$schedule->visit}}</a>
+                                @else {{$schedule->visit}}
+                                @endif
+                                        {{ isset($schedule->patient->name) ? 'Записался: '.$schedule->patient->name : 'Не занято' }}
 
-                                    @method('delete')
-                                    @csrf
-                                    <button type="submit" class=" btn btn-link btn-sm float-right">Удалить</button>
-                                </form>
-
+                                        @method('delete')
+                                        @csrf
+                                        <button type="submit" class=" btn btn-link btn-sm float-right">Удалить</button>
+                                    </form>
                             </li>
                         @endforeach
                     </ul>
-                    <form method="post" action="{{ route('addSchedule')}}" >
+                    <form method="post" action="{{ route('addSchedule')}}">
                         @csrf
-                    <input type="datetime-local" name="dataTime">
-
+                        <input type="datetime-local" name="dataTime">
                         <button type="submit" class=" btn btn-link btn-sm float-right">Добавить</button>
                     </form>
 

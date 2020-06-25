@@ -4,18 +4,48 @@
 namespace App\Repositories;
 
 
+use App\Models\Schedule;
+use Illuminate\Database\Eloquent\Collection;
+
 interface DoctorRepositoryInterface
 {
-    public function  getAllDoctors();
+    /**
+     * @return Collection|null
+     * get all doctors from doctors table
+     */
+    public function getAllDoctors(): ?Collection;
 
-    public function getAvailableDoctorsSchedules($id);
+    /**
+     * @param int $id
+     * @return Collection
+     * get an affordable schedule to the doctor
+     */
+    public function getAvailableDoctorsSchedules(int $id): Collection;
 
-    public function  getAllDoctorsSchedules();
+    /**
+     * @return Collection
+     * get auth doctors schedule
+     */
+    public function getAllDoctorsSchedules(): Collection;
 
-    public function deleteShedule($id);
+    /**
+     * @param int $id
+     * @throws \Exception
+     * delete schedule by id
+     */
+    public function deleteShedule(int $id);
 
-    public function addShedule($data);
+    /**
+     * @param string $data
+     * add new schedule
+     */
+    public function addShedule(string $data);
 
-    public function findSheduleById($id);
+    /**
+     * @param int $id
+     * @return Schedule
+     * find schedule by id
+     */
+    public function findSheduleById(int $id): Schedule;
 
 }

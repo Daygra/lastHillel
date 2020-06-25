@@ -11,7 +11,8 @@
                         @foreach($schedules as $schedule)
 
                             <li>
-                                {{$schedule->visit}}  <a href="{{ route('changeSingUpStatus',['id'=>$schedule->id])}}">@csrfЗаписаться</a>
+                                {{$schedule->visit}} <a
+                                    href="{{ route('changeSingUpStatus',['id'=>$schedule->id])}}">@csrfЗаписаться</a>
 
                             </li>
                         @endforeach

@@ -2,29 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20a48dbb-23b0-48ab-982f-c93493edfc14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Services/PDFService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/PDFServiceInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/final.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/AddDoctor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/deleteDoctor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AjaxController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApointmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApointmentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/DoctorRoleCheck.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/DoctorRoleCheck.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Doctors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Doctors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/DoctorRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/DoctorRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/DoctorRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/DoctorRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/PatientRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/PatientRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/PatientRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/PatientRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/DoctorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/DoctorService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/DoctorServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/DoctorServiceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/PDFService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PDFService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/PDFServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PDFServiceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/PatientService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PatientService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/PatientServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PatientServiceInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/apointment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/apointment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/doctor/addSchedule.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/doctor/showSchedule.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/doctor/showSchedule.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/message.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/patient/appointments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/patient/appointments.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/patient/doctors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/patient/doctors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/patient/doctorsSchedule.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/patient/doctorsSchedule.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,19 +194,22 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ciJn3Le3K7pyaINPcjGoor5yKN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -243,7 +248,9 @@
       <workItem from="1591877754155" duration="18160000" />
       <workItem from="1592048001880" duration="17532000" />
       <workItem from="1592681804839" duration="1507000" />
-      <workItem from="1592726548290" duration="9506000" />
+      <workItem from="1592726548290" duration="19018000" />
+      <workItem from="1592762593109" duration="1764000" />
+      <workItem from="1593107021219" duration="8034000" />
     </task>
     <servers />
   </component>
@@ -252,6 +259,9 @@
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="SHOW_OTHER_BRANCHES" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591007756821">
@@ -262,10 +272,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1591376256271" />
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1591614151640">
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593114509237">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1591614151640" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1593114509237" />
     <state x="459" y="282" key="ComposerInitDialogKey" timestamp="1591102395015">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -290,10 +300,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.738@0.0.1366.738" timestamp="1592057163031" />
-    <state x="829" y="130" key="NewPhpClassDialog" timestamp="1592735965657">
+    <state x="829" y="130" key="NewPhpClassDialog" timestamp="1592765785135">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="829" y="130" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1592735965657" />
+    <state x="829" y="130" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1592765785135" />
     <state x="759" y="277" key="NewPhpFileDialog" timestamp="1592731348775">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -302,10 +312,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="564" y="91" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1592731277721" />
-    <state x="207" y="23" key="SettingsEditor" timestamp="1591019391157">
+    <state x="207" y="23" key="SettingsEditor" timestamp="1592751411170">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="207" y="23" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1591019391157" />
+    <state x="207" y="23" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592751411170" />
     <state x="582" y="259" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591895733725">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -322,10 +332,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="541" y="115" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.738@0.0.1366.738" timestamp="1591099089462" />
-    <state x="-1" y="0" width="867" height="738" key="find.popup" timestamp="1592731892889">
+    <state x="-1" y="0" width="867" height="738" key="find.popup" timestamp="1593110092950">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="-1" y="0" width="867" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1592731892889" />
+    <state x="-1" y="0" width="867" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1593110092950" />
     <state x="406" y="11" key="refactoring.ChangeSignatureDialog" timestamp="1591643978215">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

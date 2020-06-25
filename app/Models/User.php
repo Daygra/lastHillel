@@ -44,10 +44,10 @@ class User extends Authenticatable
 
     public function patientSchedules(): HasMany
     {
-        return $this->hasMany(Schedule::class,'patient_id', 'id');
+        return $this->hasMany(Schedule::class, 'patient_id', 'id');
     }
 
-    public function doctors():HasOne
+    public function doctors(): HasOne
     {
         return $this->hasOne(Doctors::class);
     }

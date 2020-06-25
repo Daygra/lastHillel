@@ -7,52 +7,86 @@ namespace App\Repositories;
 use App\Models\Doctors;
 use App\Models\Schedule;
 use App\Models\User;
+use Illuminate\Database\Eloquent\Collection;
 
 class DoctorRepository implements DoctorRepositoryInterface
 {
+    /**
+     * @var Doctors $doctorModel
+     * @var User $userModel
+     * @var Schedule $scheduleModel
+     *
+     */
+
     private $doctorModel;
     private $userModel;
     private $scheduleModel;
 
     public function __construct()
     {
-        $this->doctorModel=app()->make(Doctors::class);
-        $this->userModel=app()->make(User::class);
-        $this->scheduleModel=app()->make(Schedule::class);
+        $this->doctorModel = app()->make(Doctors::class);
+        $this->userModel = app()->make(User::class);
+        $this->scheduleModel = app()->make(Schedule::class);
 
     }
 
-    public function getAllDoctors()
+    /**
+     * @return Collection
+     * get all doctors from doctors table
+     */
+    public function getAllDoctors(): Collection
     {
         return $this->doctorModel->get();
     }
 
-
-    public function getAvailableDoctorsSchedules($id)
+    /**
+     * @param int $id
+     * @return Collection
+     * get an affordable schedule to the doctor
+     */
+    public function getAvailableDoctorsSchedules(int $id): Collection
     {
-        return  $this->doctorModel->find($id)->doctorsSchedules->where('patient_id','=',null);
+        return $this->doctorModel->find($id)->doctorsSchedules->where('patient_id', '=', null);
     }
 
-    public function getAllDoctorsSchedules()
+    /**
+     * @return Collection
+     * get auth doctors schedule
+     */
+    public function getAllDoctorsSchedules(): Collection
     {
-        return  $this->userModel->find(\Auth::id())->doctors->doctorsSchedules;
+        return $this->userModel->find(\Auth::id())->doctors->doctorsSchedules;
     }
 
-    public function deleteShedule($id)
+    /**
+     * @param int $id
+     * @throws \Exception
+     * delete schedule by id
+     */
+    public function deleteShedule(int $id)
     {
         $this->findSheduleById($id)->delete();
     }
 
-    public function findSheduleById($id)
+    /**
+     * @param int $id
+     * @return Schedule
+     * find schedule by id
+     */
+    public function findSheduleById(int $id): Schedule
     {
-      return  $this->scheduleModel->find($id);
+        return $this->scheduleModel->find($id);
     }
 
-    public function addShedule($data)
+    /**
+     * @param string $data
+     * add new schedule
+     */
+    public function addShedule(string $data)
     {
-        $schedule= new Schedule();
-        $schedule->visit=$data;
-        $schedule->doctor_id=\Auth::id();
+        $schedule = new Schedule();
+        $schedule->visit = $data;
+        $schedule->doctor_id = \Auth::id();
         $schedule->save();
     }
 }

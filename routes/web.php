@@ -41,4 +41,4 @@ Route::middleware('auth','doctor.check')->group(function () {
 Route::get('/appointment/{url}', 'ApointmentController@index')->name('appointment');
 
 
-Route::get('/appointment/download/{id}', 'ApointmentController@pdf')->name('pdf');
+Route::get('/appointmentd/{id}/{url}', 'ApointmentController@pdf')->name('pdf');

@@ -15,8 +15,7 @@
                         <li>{{$sc->patient->name}}</li>
                         <li>Время приема:</li>
                         <li>{{$sc->visit}}</li>
-                        <li><a href="{{ route('pdf',['id'=>$sc->id])}}">Скачать талон</a></li>
-
+                        <li><a href="{{ route('pdf',['url'=>$sc->url,'id'=>$sc->id])}}">Скачать талон</a></li>
 
 
                     </ul>

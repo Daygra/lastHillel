@@ -6,5 +6,10 @@ namespace App\Services;
 
 interface PDFServiceInterface
 {
-    public function makePDF($id);
+    /**
+     * @param $id
+     * @param $url
+     * @return \Illuminate\Http\Response
+     */
+    public function makePDF($id, $url);
 }
